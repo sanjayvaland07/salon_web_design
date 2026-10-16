@@ -1,0 +1,579 @@
+footer {
+    width: 100%;
+    background-color: #111;
+    color: #fff;
+}
+
+.footer {
+    width: min(100%, 1280px);
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    justify-content: stretch;
+    gap: 30px;
+    margin: 50px auto 0;
+    padding: 40px 24px;
+}
+
+.footer .box {
+    width: auto;
+    min-width: 0;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 8px;
+    color: #fff;
+    background: transparent;
+    overflow-wrap: anywhere;
+}
+
+.footer .box h3 {
+    margin-bottom: 12px;
+}
+
+.footer .box2 a {
+    color: #fff;
+}
+
+.footer .box2 a:hover {
+    color: orange;
+}
+
+.footer .box4 input {
+    width: 100%;
+    min-width: 0;
+    height: 42px;
+    padding: 10px;
+}
+
+.footer .box4 button {
+    width: min(100%, 150px);
+    min-height: 48px;
+    border: 0;
+    background-color: orange;
+    color: #fff;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+    html,
+    body {
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+
+    img,
+    iframe {
+        max-width: 100%;
+    }
+
+    .footer {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        justify-content: stretch;
+        gap: 24px;
+        margin-top: 32px;
+        padding: 32px 20px;
+    }
+
+    .footer .box {
+        width: auto;
+        min-width: 0;
+        padding: 8px;
+        overflow-wrap: anywhere;
+    }
+
+    .footer .box h3 {
+        margin-bottom: 8px;
+    }
+
+    .footer .box4 input {
+        min-width: 0;
+    }
+
+    .footer .box4 button {
+        max-width: 100%;
+    }
+
+    .about .left,
+    .about .right {
+        width: 90%;
+    }
+
+    .about .left img {
+        width: 100%;
+        height: auto;
+        max-height: 360px;
+        object-fit: cover;
+    }
+
+    .about .right {
+        padding: 24px 0;
+        gap: 18px;
+    }
+
+    .services {
+        background-attachment: scroll;
+    }
+
+    .services .boxes .box {
+        width: min(100%, 420px);
+    }
+
+    .feedback {
+        background-attachment: scroll;
+    }
+
+    .contact-container {
+        width: calc(100% - 32px);
+        max-width: 600px;
+        max-height: none;
+        margin: 28px auto;
+        overflow: visible;
+    }
+
+    .contact-container p,
+    .contact-details p,
+    .contact-details a {
+        font-size: 1rem;
+        overflow-wrap: anywhere;
+    }
+
+    .content {
+        grid-template-columns: minmax(0, 1fr);
+    }
+
+    .contact-details,
+    .map,
+    .contact-form {
+        min-width: 0;
+    }
+
+    .contact-details,
+    .map,
+    .contact-form {
+        gap: 12px;
+    }
+
+    .contact-details p,
+    .contact-details a {
+        margin-top: 0;
+    }
+
+    .contact-container iframe {
+        height: 240px;
+    }
+
+    .about-section {
+        padding: 0;
+    }
+
+    body > .container:has(.about-section) {
+        width: calc(100% - 32px);
+        min-height: 0;
+        margin: 32px auto;
+        padding: 24px;
+    }
+
+    .about-section p {
+        line-height: 1.7;
+        overflow-wrap: anywhere;
+    }
+
+    #work-btn {
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .container:has(.review-card) {
+        width: 100%;
+        margin: 32px auto;
+        padding: 16px;
+    }
+
+    .review-rating {
+        font-size: 1.15em;
+    }
+
+    .box:has(.left img):has(.right) {
+        height: auto;
+        align-items: stretch;
+        width: 100%;
+        margin: 24px 0;
+    }
+
+    .box:has(.left img):has(.right) .left {
+        width: 38%;
+        min-height: 220px;
+    }
+
+    .box:has(.left img):has(.right) .left img {
+        object-fit: cover;
+    }
+
+    .box:has(.left img):has(.right) .right {
+        width: 62%;
+        gap: 20px;
+        padding: 16px;
+        font-size: 1rem;
+    }
+
+    .box:has(.left img):has(.right) .right p {
+        padding: 0;
+    }
+
+    .main {
+        height: 36svh;
+        min-height: 220px;
+    }
+
+    .main .main-heading {
+        width: calc(100% - 32px);
+        text-align: center;
+    }
+
+    .main .main-heading h1 {
+        font-size: clamp(2rem, 8vw, 3rem);
+    }
+
+    .service {
+        height: auto;
+        min-height: 0;
+        flex-direction: column;
+        margin: 24px 0;
+    }
+
+    .service .left,
+    .service .right {
+        width: 100%;
+    }
+
+    .service .left {
+        padding: 16px;
+    }
+
+    .left .service-logo {
+        width: min(60%, 240px);
+        height: 140px;
+    }
+
+    .left .service-category {
+        width: 100%;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 8px;
+    }
+
+    .left .service-category button {
+        width: calc(50% - 4px);
+        min-height: 44px;
+        height: auto;
+        padding: 8px;
+        font-size: 1rem;
+    }
+
+    .service .right {
+        max-height: none;
+        overflow: visible;
+        padding: 12px;
+    }
+
+    .service .right .box,
+    #cart-item .box {
+        min-height: 130px;
+        height: auto;
+        gap: 12px;
+        padding: 12px;
+    }
+
+    .service .right .box .box-img,
+    #cart-item .box .box-img {
+        width: min(28%, 110px);
+        height: 100px;
+        flex: 0 0 min(28%, 110px);
+    }
+
+    .service .right .box button,
+    #cart-item .box button {
+        padding: 12px;
+    }
+
+    #cart-item {
+        width: calc(100% - 32px);
+    }
+
+    #cart-item .box {
+        flex-wrap: wrap;
+    }
+
+    #cart-item .box button {
+        margin-left: auto;
+    }
+
+    #cartbtn,
+    #paybtn {
+        padding: 14px 22px;
+        text-align: center;
+    }
+
+    #appointment-form,
+    #payment-section {
+        width: calc(100% - 32px);
+        max-width: 500px;
+        padding: 18px;
+    }
+
+    #appointment-form h2,
+    #payment-section h2 {
+        font-size: 1.4rem;
+    }
+
+    body:has(#payment-section) main {
+        width: 100%;
+        padding: 0;
+    }
+
+    body:has(#payment-section) #heading {
+        padding: 0 16px;
+    }
+
+    .navigation {
+        top: 0;
+        left: 0;
+        z-index: 10;
+        height: auto;
+        min-height: 64px;
+        margin: 0;
+        padding: 10px 16px;
+        font-size: clamp(1.4rem, 6vw, 2rem);
+        text-align: center;
+    }
+
+    body:has(.legend) {
+        min-height: 100vh;
+        min-height: 100svh;
+        height: auto;
+        padding: 88px 12px 24px;
+    }
+
+    body:has(.legend) form {
+        width: 100%;
+        max-width: 420px;
+    }
+
+    body:has(.legend) .container {
+        width: 100%;
+        height: auto;
+        min-height: 360px;
+        margin: 0;
+        padding: 24px 18px;
+    }
+
+    body:has(.legend) input {
+        width: 100%;
+    }
+
+    body:has(.legend) input:hover {
+        width: 100%;
+    }
+
+    body:has(.legend) label {
+        font-size: 1.1rem;
+    }
+
+    body:has(.legend) .legend {
+        margin-bottom: 12px;
+    }
+
+    body:has(.gender) {
+        min-height: 100vh;
+        min-height: 100svh;
+        height: auto;
+        padding: 88px 12px 24px;
+    }
+
+    body:has(.gender) h2 {
+        margin: 24px 0 16px;
+        font-size: clamp(1.8rem, 8vw, 2.5rem);
+    }
+
+    body:has(.gender) > .container {
+        width: 100%;
+        max-width: 480px;
+        padding: 0;
+    }
+
+    body:has(.gender) .main {
+        width: 100%;
+        padding: 20px 16px;
+    }
+
+    body:has(.gender) input:not([type="radio"]) {
+        width: 100%;
+    }
+
+    body:has(.gender) input:not([type="radio"]):hover {
+        width: 100%;
+    }
+
+    body:has(.gender) .gender {
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .footer {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 20px;
+        padding: 28px 20px;
+    }
+
+    .footer .box {
+        width: 100%;
+    }
+
+    .slider-frame {
+        height: min(72svh, 620px);
+        min-height: 420px;
+    }
+
+    .slider .details {
+        top: 50%;
+        left: 8%;
+        width: 84%;
+        transform: translateY(-50%);
+        gap: 18px;
+    }
+
+    .slider .details h1 {
+        font-size: clamp(1.6rem, 8vw, 2rem);
+    }
+
+    .slider .details p {
+        line-height: 1.5;
+    }
+
+    .slider .details button {
+        width: auto;
+        min-width: 96px;
+        height: 44px;
+        padding: 0 12px;
+    }
+
+    .about {
+        flex-direction: column;
+        align-items: center;
+        margin: 32px 0;
+        padding: 0 16px;
+    }
+
+    .about .left,
+    .about .right {
+        width: 100%;
+    }
+
+    .about .right {
+        text-align: center;
+    }
+
+    .about .right h1 {
+        font-size: 2rem;
+    }
+
+    .services .boxes {
+        align-items: stretch;
+        gap: 16px;
+    }
+
+    .services .boxes .box {
+        width: 100%;
+    }
+
+    .feedback form {
+        width: calc(100% - 32px);
+    }
+
+    .contact-container {
+        width: calc(100% - 24px);
+        padding: 16px;
+    }
+
+    body > .container:has(.about-section) {
+        width: calc(100% - 24px);
+        margin: 24px auto;
+        padding: 18px;
+    }
+
+    .container:has(.review-card) {
+        padding: 12px;
+    }
+
+    .review-card {
+        padding: 16px;
+    }
+
+    .reviewer-avatar {
+        width: 48px;
+        height: 48px;
+        flex: 0 0 48px;
+    }
+
+    .review-rating {
+        font-size: 1rem;
+    }
+
+    .box:has(.left img):has(.right) {
+        flex-direction: column;
+        width: calc(100% - 32px);
+        margin: 24px 16px;
+    }
+
+    .box:has(.left img):has(.right) .left,
+    .box:has(.left img):has(.right) .right {
+        width: 100%;
+    }
+
+    .box:has(.left img):has(.right) .left {
+        height: 240px;
+        min-height: 0;
+    }
+
+    .box:has(.left img):has(.right) .right {
+        gap: 16px;
+        padding: 18px 8px;
+    }
+
+    .service .right .box,
+    #cart-item .box {
+        flex-wrap: wrap;
+    }
+
+    .service .right .box .box-img,
+    #cart-item .box .box-img {
+        width: 80px;
+        height: 80px;
+        flex-basis: 80px;
+    }
+
+    .service .right .box button,
+    #cart-item .box button {
+        margin-left: auto;
+        padding: 10px;
+    }
+
+    .navigation {
+        font-size: 1.35rem;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .navlink,
+    .nav-toggle-button span {
+        transition: none;
+    }
+}
